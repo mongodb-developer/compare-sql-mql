@@ -1,0 +1,34 @@
+
+CREATE TABLE products (
+id INT UNSIGNED NOT NULL PRIMARY KEY,
+name TINYTEXT NOT NULL);
+
+CREATE TABLE sales (
+id INT UNSIGNED NOT NULL PRIMARY KEY,
+dt DATETIME NOT NULL,
+customer_id INT UNSIGNED,
+INDEX(dt));
+
+CREATE TABLE items (
+item_id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+sale_id INT UNSIGNED,
+product_id INT UNSIGNED,
+price DECIMAL(6,2),
+quantity TINYINT UNSIGNED,
+INDEX(sale_id),
+INDEX(product_id),
+FOREIGN KEY (product_id) REFERENCES products(id),
+FOREIGN KEY (sale_id) REFERENCES sales(id));
+
+CREATE TABLE tags (
+id INT UNSIGNED NOT NULL PRIMARY KEY,
+tag TINYTEXT NOT NULL);
+
+CREATE TABLE product_tags (
+product_id INT UNSIGNED NOT NULL,
+tag_id INT UNSIGNED NOT NULL,
+PRIMARY KEY (product_id, tag_id),
+INDEX(tag_id),
+FOREIGN KEY (product_id) REFERENCES products(id),
+FOREIGN KEY (tag_id) REFERENCES tags(id));
+
