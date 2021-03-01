@@ -1,0 +1,30 @@
+db.sales.insertMany( [
+{"_id": ObjectId("5bd761dcae323e45a93ccfed"),
+"saleDate":ISODate("2015-09-02T16:11:59.565Z"),
+"items": [{
+    "name":"binder",
+    "tags":["school","general","organization"],
+    "price":NumberDecimal("13.44"),
+    "quantity":8
+},{
+    "name":"binder",
+    "tags":["school","general","organization"],
+    "price":NumberDecimal("16.66"),"quantity":10
+    }],
+"storeLocation":"London",
+"customer":{
+    "gender":"M",
+    "age":44,
+    "email":"owtar@pu.cd","satisfaction":2},
+    "couponUsed":false,
+    "purchaseMethod":"In store"
+},
+{"_id": ObjectId("5bd761ddae323e45a93cd57e"),"saleDate":ISODate("2015-08-31T17:58:23.323Z"),"items":[{"name":"binder","tags":["school","general","organization"],"price":NumberDecimal("11.01"),"quantity":2},{"name":"printer paper","tags":["office","stationary"],"price":NumberDecimal("33.66"),"quantity":1},{"name":"binder","tags":["school","general","organization"],"price":NumberDecimal("13.68"),"quantity":8},{"name":"notepad","tags":["office","writing","school"],"price":NumberDecimal("38.52"),"quantity":4}],"storeLocation":"San Diego","customer":{"gender":"M","age":23,"email":"fugezu@wawese.dm","satisfaction":3},"couponUsed":false,"purchaseMethod":"Online"},
+{"_id": ObjectId("5bd761ddae323e45a93cd697"),"saleDate":ISODate("2015-08-31T15:40:48.974Z"),"items":[{"name":"notepad","tags":["office","writing","school"],"price":NumberDecimal("21.81"),"quantity":3},{"name":"notepad","tags":["office","writing","school"],"price":NumberDecimal("14.3"),"quantity":2},{"name":"pens","tags":["writing","office","school","stationary"],"price":NumberDecimal("49.69"),"quantity":2}],"storeLocation":"Seattle","customer":{"gender":"F","age":36,"email":"ga@areho.bs","satisfaction":4},"couponUsed":false,"purchaseMethod":"In store"},
+{"_id": ObjectId("5bd761ddae323e45a93cd75b"),"saleDate":ISODate("2015-08-31T01:48:46.456Z"),"items":[{"name":"backpack","tags":["school","travel","kids"],"price":NumberDecimal("123.55"),"quantity":5},{"name":"envelopes","tags":["stationary","office","general"],"price":NumberDecimal("16.82"),"quantity":8}],"storeLocation":"London","customer":{"gender":"F","age":55,"email":"kureg@ki.net","satisfaction":5},"couponUsed":false,"purchaseMethod":"In store"},
+{"_id": ObjectId("5bd761ddae323e45a93cdab7"),"saleDate":ISODate("2015-08-31T19:24:25.758Z"),"items":[{"name":"notepad","tags":["office","writing","school"],"price":NumberDecimal("25.13"),"quantity":2},{"name":"binder","tags":["school","general","organization"],"price":NumberDecimal("12.77"),"quantity":8},{"name":"notepad","tags":["office","writing","school"],"price":NumberDecimal("18.14"),"quantity":2}],"storeLocation":"New York","customer":{"gender":"M","age":62,"email":"zi@deneebi.bv","satisfaction":1},"couponUsed":false,"purchaseMethod":"In store"},
+{"_id": ObjectId("5bd761deae323e45a93ce087"),"saleDate":ISODate("2015-09-01T14:14:27.111Z"),"items":[{"name":"pens","tags":["writing","office","school","stationary"],"price":NumberDecimal("33.32"),"quantity":4},{"name":"backpack","tags":["school","travel","kids"],"price":NumberDecimal("184.49"),"quantity":3},{"name":"notepad","tags":["office","writing","school"],"price":NumberDecimal("36.46"),"quantity":3},{"name":"laptop","tags":["electronics","school","office"],"price":NumberDecimal("852.31"),"quantity":4},{"name":"envelopes","tags":["stationary","office","general"],"price":NumberDecimal("6.59"),"quantity":5},{"name":"printer paper","tags":["office","stationary"],"price":NumberDecimal("47.48"),"quantity":8}],"storeLocation":"London","customer":{"gender":"F","age":56,"email":"ce@cirophac.sg","satisfaction":3},"couponUsed":false,"purchaseMethod":"In store"}
+])
+
+
+    

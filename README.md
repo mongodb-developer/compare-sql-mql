@@ -5,5 +5,5 @@ The `setup` directory has the SQL and MongoDB schema/data, as well as a traditio
 
 The SQL data is in MySQL's version of SQL syntax.
 
-The MongoDB data comes from the sample database called sample_supplies - it is included for completeness' sake. The MongoDB data is easily installed by following the instructions at https://docs.atlas.mongodb.com/sample-data/, or you can use `mongoimport` with the sales.json file.
+The MongoDB data comes from the sample database called sample_supplies - it is included for completeness' sake. The MongoDB data is easily installed by following the instructions at https://docs.atlas.mongodb.com/sample-data/, or you can use `mongoimport` with the sales.json file. Alternatively, the insertSales.json file contains a standard MongoDB Querying Language (MQL) insert statement.
 
