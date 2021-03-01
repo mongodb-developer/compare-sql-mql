@@ -1,9 +1,3 @@
-DROP TABLE IF EXISTS products;
-DROP TABLE IF EXISTS sales;
-DROP TABLE IF EXISTS items;
-DROP TABLE IF EXISTS tags;
-DROP TABLE IF EXISTS product_tags;
-
 INSERT INTO products (id, name) VALUES
 (1, 'binder'),(2, 'printer paper'),
 (3, 'pencils'),(4, 'notepad'),
